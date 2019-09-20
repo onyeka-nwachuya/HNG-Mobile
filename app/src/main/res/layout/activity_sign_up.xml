@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignUp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/HNG"
+        android:layout_marginTop="0dp"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_signin"
+            style="@style/HNG"
+            android:layout_marginTop="@dimen/dp32"
+            android:layout_marginBottom="@dimen/dp32"
+            android:text="@string/signup"
+            android:textSize="@dimen/sp32"
+            app:layout_constraintBottom_toTopOf="@+id/su_fullname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/su_fullname"
+            style="@style/HNG.EditText"
+            android:layout_marginTop="@dimen/dp16"
+            android:ems="10"
+            android:hint="@string/fullname"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/su_username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_signin" />
+
+        <EditText
+            android:id="@+id/su_username"
+            style="@style/HNG.EditText"
+            android:layout_marginTop="@dimen/dp16"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/su_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/su_fullname" />
+
+        <EditText
+            android:id="@+id/su_email"
+            style="@style/HNG.EditText"
+            android:layout_marginTop="@dimen/dp16"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/su_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/su_username" />
+
+        <EditText
+            android:id="@+id/su_password"
+            style="@style/HNG.EditText"
+            android:layout_marginTop="@dimen/dp16"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/su_email" />
+
+        <Button
+            android:id="@+id/su_button"
+            style="@style/HNG.Button"
+            android:onClick="RegisterUser"
+            android:text="@string/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/su_password" />
+
+        <TextView
+            style="@style/HNG"
+            android:id="@+id/tv_login"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:textSize="@dimen/sp18"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/su_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

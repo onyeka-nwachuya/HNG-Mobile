@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HNG Mobile</string>
+    <string name="signup">SIGN UP</string>
+    <string name="signin">SIGN IN</string>
+    <string name="fullname">Full Name</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_user">New User? SIGN UP</string>
+    <string name="old_user">Already have an account? SIGN IN</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="welcome_message">You are logged in as </string>
+</resources>
